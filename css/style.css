@@ -543,7 +543,8 @@ body._lock {
 .catalog .catalog-content__block__item p span {
   font-weight: 700;
 }
-.catalog .catalog-content__block__item a {
+
+.product-btn {
   background-color: rgb(226, 149, 49);
   display: block;
   padding: 20px 0px;
@@ -554,8 +555,13 @@ body._lock {
   color: black;
   transition: all 0.3s ease 0s;
 }
-.catalog .catalog-content__block__item a:hover {
+.product-btn:hover {
   background-color: rgb(201, 116, 5);
+}
+
+.modalProduct-btn {
+  margin-top: auto;
+  width: 100%;
 }
 
 .pop-up {
@@ -567,22 +573,59 @@ body._lock {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
 }
 .pop-up__container {
-  padding: 30px;
+  display: flex;
+  padding: 15px;
   background-color: #fff;
-  position: absolute;
-}
-.pop-up video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 65vw;
+  width: 80vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
+  .pop-up__container {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
+.pop-up__container__text {
+  padding: 0px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1300px) {
+  .pop-up__container__text {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.pop-up__container__text h2 {
+  font-size: 30px;
+}
+.pop-up__container__text p {
+  font-size: 24px;
+  font-weight: 500;
+}
+.pop-up__container__text #modalDescription {
+  margin: 20px 0px;
+  font-size: 17px;
+}
+.pop-up__container__text #modalStatus {
+  background-color: green;
+  border-radius: 5px;
+  color: #fff;
+  width: 110px;
+  text-align: center;
+}
+.pop-up video {
+  width: 70%;
+}
+@media (max-width: 1300px) {
   .pop-up video {
-    width: 95%;
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 .pop-up span {

@@ -71,11 +71,21 @@ document.querySelector('#tab-1').classList.remove('hidden');
 //         document.body.classList.add('_lock');
 //     }
 // });
-function openModal(videoSource){
+function openModal(videoSource, status,title, price, description){
     const modal = document.getElementById("modal");
     const videoPlayer = document.getElementById("videoPlayer");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalStatus = document.getElementById("modalStatus");
+    const modalPrice = document.getElementById("modalPrice");
+    const modalDescription = document.getElementById("modalDescription");
+
 
     videoPlayer.src = videoSource;
+    modalTitle.textContent = title;
+    modalStatus.textContent = status;
+    modalPrice.textContent = price;
+    modalDescription.textContent = description;
+    
     modal.style.display = "block";
     document.body.classList.add('_lock');
 }

@@ -578,7 +578,7 @@ body._lock {
 .pop-up__container {
   display: flex;
   padding: 15px;
-  background-color: #fff;
+  background-color: #dbdada;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -591,7 +591,13 @@ body._lock {
     padding: 8px;
   }
 }
+@media (max-width: 768px) {
+  .pop-up__container {
+    width: 100%;
+  }
+}
 .pop-up__container__text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px 0px 0px 15px;
   display: flex;
   flex-direction: column;
@@ -613,11 +619,9 @@ body._lock {
   font-size: 17px;
 }
 .pop-up__container__text #modalStatus {
-  background-color: green;
   border-radius: 5px;
-  color: #fff;
-  width: 110px;
-  text-align: center;
+  color: #19a72c;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.808);
 }
 .pop-up video {
   width: 70%;

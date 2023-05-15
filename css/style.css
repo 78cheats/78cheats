@@ -575,7 +575,7 @@ body._lock {
   background: rgba(0, 0, 0, 0.8);
   overflow-y: auto;
 }
-.pop-up__container {
+.pop-up__content__container {
   display: flex;
   padding: 15px;
   background-color: #dbdada;
@@ -586,13 +586,13 @@ body._lock {
   width: 80vw;
 }
 @media (max-width: 1300px) {
-  .pop-up__container {
+  .pop-up__content__container {
     flex-direction: column;
     padding: 8px;
   }
 }
 @media (max-width: 768px) {
-  .pop-up__container {
+  .pop-up__content__container {
     width: 100%;
   }
 }

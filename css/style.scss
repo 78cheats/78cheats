@@ -375,24 +375,28 @@ body{
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     overflow-y: auto;
-   
+   &__content__container{
+    display: flex;
+    padding: 15px;
+    background-color: #dbdada;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+
+    @media(max-width: 1300px){
+        flex-direction: column;
+        padding: 8px;
+    }
+    @media(max-width: 768px){
+        width: 100%;
+    }
+    }
 
     &__container{
-        display: flex;
-        padding: 15px;
-        background-color: #dbdada;    
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw;
-        @media(max-width: 1300px){
-            flex-direction: column;
-            padding: 8px;
-        }
-        @media(max-width: 768px){
-            width: 100%;
-        }
+        
+        
 
         &__text{
             font-family:Verdana, Geneva, Tahoma, sans-serif;

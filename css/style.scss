@@ -376,23 +376,28 @@ body{
     background: rgba(0, 0, 0, 0.8);
     overflow-y: auto;
    
-
-    &__container{
+    &__content__container{
         display: flex;
+        // flex-direction: column;
         padding: 15px;
         background-color: #dbdada;    
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw;
         @media(max-width: 1300px){
             flex-direction: column;
             padding: 8px;
         }
+    }
+    &__container{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        
         @media(max-width: 768px){
             width: 100%;
+            background-color: #fff;
         }
+        
 
         &__text{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -423,19 +428,18 @@ body{
 
     video{
         width: 70%;
-        
         @media(max-width: 1300px){
             width: 100%;
             margin-bottom: 30px;
         }
     }
     span{
-        position: fixed;
-        top: 10px;
-        right: 20px;
+        position: relative;
+        left: 100%;
+
         width: 40px;
         height: 40px;
-        background-color: #f7f7f7;
+        // background-color: #f7f7f7;
         font-size: 50px;
         font-weight: 900;
         line-height: 40px;
@@ -444,11 +448,13 @@ body{
         cursor: pointer;
         transition: all .5s;
         color: #000;
-        &:hover{
-            background-color: #2b2a2a;
-            color: #fff;
-        }
-        
+        // &:hover{
+        //     background-color: #2b2a2a;
+        //     color: #fff;
+        // }
+        @media(max-width: 768px) {
+            
+        }        
     }
 }
 /* --------footer------------------------------------------------------------------ */

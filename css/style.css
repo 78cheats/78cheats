@@ -619,9 +619,13 @@ body._lock {
   font-size: 17px;
 }
 .pop-up__container__text #modalStatus {
+  display: block;
   border-radius: 5px;
   color: #19a72c;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.808);
+  font-weight: 600;
+}
+.pop-up__container__text span {
+  display: inline-block;
 }
 .pop-up video {
   width: 70%;
@@ -632,10 +636,10 @@ body._lock {
     margin-bottom: 30px;
   }
 }
-.pop-up span {
+.pop-up .pop-up__close {
   position: fixed;
   top: 10px;
-  right: 20px;
+  right: 15px;
   width: 40px;
   height: 40px;
   background-color: #f7f7f7;
@@ -645,10 +649,11 @@ body._lock {
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 100;
   transition: all 0.5s;
   color: #000;
 }
-.pop-up span:hover {
+.pop-up .pop-up__close:hover {
   background-color: #2b2a2a;
   color: #fff;
 }

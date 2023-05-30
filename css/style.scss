@@ -395,7 +395,8 @@ body{
     }
 
     &__container{
-        
+        // position: relative;
+        // overflow-y: auto;
         
 
         &__text{
@@ -418,9 +419,16 @@ body{
                 font-size: 17px;
             }
             #modalStatus{
+                display: block;
                 border-radius: 5px;
+                // background-color: #19a72c;
                 color: #19a72c;
-                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.808);
+                // width: 120px;
+                
+                font-weight: 600;
+            }
+            span{
+                display: inline-block;
             }
         }
     }
@@ -433,10 +441,10 @@ body{
             margin-bottom: 30px;
         }
     }
-    span{
+    .pop-up__close{
         position: fixed;
         top: 10px;
-        right: 20px;
+        right: 15px;
         width: 40px;
         height: 40px;
         background-color: #f7f7f7;
@@ -446,6 +454,7 @@ body{
         text-align: center;
         border-radius: 50%;
         cursor: pointer;
+        z-index: 100;
         transition: all .5s;
         color: #000;
         &:hover{

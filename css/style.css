@@ -619,9 +619,11 @@ body._lock {
   font-size: 17px;
 }
 .pop-up__container__text #modalStatus {
-  display: block;
+  display: inline;
+  margin: 10px 0px;
+  padding: 2px;
   border-radius: 5px;
-  color: #19a72c;
+  background-color: green;
   font-weight: 600;
 }
 .pop-up__container__text span {

@@ -419,10 +419,12 @@ body{
                 font-size: 17px;
             }
             #modalStatus{
-                display: block;
+                display: inline;
+                margin: 10px 0px;
+                padding: 2px;
                 border-radius: 5px;
                 // background-color: #19a72c;
-                color: #19a72c;
+                background-color: green;
                 // width: 120px;
                 
                 font-weight: 600;

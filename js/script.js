@@ -58,8 +58,8 @@ tabsTitle.forEach(item => item.addEventListener('click', event => {
 
 }));
 
-document.querySelector('[data-tab="tab-1"]').classList.add('active-tab');
-document.querySelector('#tab-1').classList.remove('hidden');
+document.querySelector('[data-tab="tab-eft"]').classList.add('active-tab');
+document.querySelector('#tab-eft').classList.remove('hidden');
 
 /* ---pop-up----------------------------------------------------------------------- */
 // const popVideo = document.getElementById("pop-up__video");

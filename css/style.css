@@ -740,18 +740,22 @@ body._lock {
 /* ------------why we-------------------------------------------------------------- */
 .why-we {
   padding: 50px 0px;
-  background-color: #bcbcbc;
+  background-color: #080707;
+  color: #fff;
 }
 .why-we__block {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
+  position: relative;
 }
 .why-we__item {
-  background-color: rgba(78, 78, 78, 0.5098039216);
+  background-color: rgba(139, 137, 137, 0.5098039216);
   padding: 30px 50px;
   border-radius: 30px;
   text-align: center;
+  color: #fff;
 }
 .why-we__item img {
   width: 200px;
@@ -760,5 +764,19 @@ body._lock {
   margin-top: 20px;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
+}
+@media (max-width: 1230px) {
+  .why-we .why-we__block {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .why-we .why-we__item img {
+    width: 125px;
+  }
+}
+@media (max-width: 1230px) and (max-width: 550px) {
+  .why-we__item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

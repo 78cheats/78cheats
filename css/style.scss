@@ -191,7 +191,7 @@ body{
         filter: brightness(0.5);
         z-index: -1;
     }
-    
+
     .main__page__content{
         // height: 100vh;
 
@@ -201,6 +201,16 @@ body{
             font-size: clamp(2.5rem, 1.621rem + 4.4vw, 5rem);
             margin-top: -60px;
             text-shadow: 5px 5px 10px #000000;
+            // border-right: clamp(0.313rem, 0.203rem + 0.55vw, 0.625rem) solid orange;
+
+            // @keyframes flashing-border{
+            //     0%{border-color: orange;}
+            //     50%{border-color: transparent;}
+            //     100%{border-color: orange;}
+            // }
+            // @keyframes printed-text{
+            //     from{width: 0}
+            // }
         }
         &__button{
             padding: clamp(0.625rem, 0.405rem + 1.1vw, 1.25rem) clamp(0.938rem, 0.168rem + 3.85vw, 3.125rem);
@@ -551,19 +561,21 @@ body{
 /* ------------why we-------------------------------------------------------------- */
 .why-we {
     padding: 50px 0px;
-    background-color: #bcbcbc;
-
+    background-color: #080707;
+    color: #fff;
     &__block{
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
-        
+        z-index: 10;
+        position: relative;
     }
     &__item{
-        background-color: #4e4e4e82;
+        background-color: #8b898982;
         padding: 30px 50px;
         border-radius: 30px;
         text-align: center;
+        color: #fff;
         
         img{
             width: 200px;
@@ -573,7 +585,30 @@ body{
             margin-top: 20px;
             font-size: 16px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color: #000000;
         }
     }
+
+
+    @media(max-width: 1230px){
+        .why-we{
+            &__block{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;  
+        }
+        &__item{
+            img{
+                width: 125px;
+            }
+        }  
+    }
+
+    @media(max-width: 550px){
+        &__item{
+            width: 100%;
+        } 
+    }
+
+
+}
 }

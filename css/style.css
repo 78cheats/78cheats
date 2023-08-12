@@ -759,6 +759,7 @@ body._lock {
 }
 .why-we__item img {
   width: 200px;
+  height: 200px;
 }
 .why-we__item h3 {
   margin-top: 20px;
@@ -773,6 +774,7 @@ body._lock {
   }
   .why-we .why-we__item img {
     width: 125px;
+    height: 125px;
   }
 }
 @media (max-width: 1230px) and (max-width: 550px) {

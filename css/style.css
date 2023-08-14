@@ -235,11 +235,13 @@ body._lock {
 
 /* ----------ШАПКА---------------------------------------------------------------- */
 .header {
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   padding: 3px 0px;
   height: 70px;
-  z-index: 5;
+  z-index: 100;
   border-bottom: 1px solid rgb(176, 175, 175);
 }
 .header__container {
@@ -386,7 +388,6 @@ body._lock {
   position: relative;
   padding: 260px 0px;
   height: 100vh;
-  margin-top: -70px;
 }
 .main__page__scav-img {
   position: absolute;

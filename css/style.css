@@ -309,6 +309,7 @@ body._lock {
     font-size: 30px;
     align-items: center;
     display: flex;
+    gap: 5px;
   }
 }
 .header__menu .menu__body .menu__list .menu__link::after {

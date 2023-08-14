@@ -97,3 +97,6 @@ document.querySelector('.pop-up span').onclick = () => {
     videoPlayer.pause();
     videoPlayer.currentTime = 0;
 }
+
+
+/* --------scav paralax------------------------------------------------------------------ */

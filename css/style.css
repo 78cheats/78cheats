@@ -398,6 +398,7 @@ body._lock {
      object-position: bottom;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 1000px) {
   .main__page__scav-img {

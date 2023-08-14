@@ -198,6 +198,7 @@ body{
         right: 10%;
         object-position: bottom;
         object-fit: contain;
+        transition: all 0.2s ease-out;
 
         @media(max-width: 1000px){
             width: 450px;

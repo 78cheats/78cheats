@@ -83,8 +83,7 @@ body{
             gap: 50px;
             @media(max-width: 768px){
                 flex-direction: column;
-                gap: 45px;
-                
+                gap: 0px;    
             }
     
             .menu__link {
@@ -94,8 +93,11 @@ body{
                 font-weight: 600;
                 padding: 23px 0px;
                 position: relative;
+
                 @media(max-width: 768px){
                     font-size: 30px;
+                    align-items: center;
+                    display: flex;
                 }
                 &:hover{
                     // background-color: rgba(240, 248, 255, 0.24);

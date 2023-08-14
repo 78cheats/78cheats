@@ -293,7 +293,7 @@ body._lock {
 @media (max-width: 768px) {
   .header__menu .menu__body .menu__list {
     flex-direction: column;
-    gap: 45px;
+    gap: 0px;
   }
 }
 .header__menu .menu__body .menu__list .menu__link {
@@ -307,6 +307,8 @@ body._lock {
 @media (max-width: 768px) {
   .header__menu .menu__body .menu__list .menu__link {
     font-size: 30px;
+    align-items: center;
+    display: flex;
   }
 }
 .header__menu .menu__body .menu__list .menu__link::after {

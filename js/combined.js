@@ -2,27 +2,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const productItems = document.querySelectorAll(".catalog-content__block__item");
   
     productItems.forEach(function (item) {
-      item.addEventListener("click", function () {
-        const cardImage = item.querySelector(".card-img").getAttribute("src");
-        const cardTitle = item.querySelector(".card-title").textContent;
-        const cardTime = item.querySelector(".card-time").textContent;
-        const cardPrice = item.querySelector(".card-price").textContent;
-        const cardDescription = item.getAttribute("data-description");
-        const cardWin = item.getAttribute("data-win");
-        const cardCpu = item.getAttribute("data-cpu");
+      const detailButton = item.querySelector(".product-btn");
+
+      if(detailButton){
+        detailButton.addEventListener("click", function () {
+          const cardImage = item.querySelector(".card-img").getAttribute("src");
+          const cardTitle = item.querySelector(".card-title").textContent;
+          const cardTime = item.querySelector(".card-time").textContent;
+          const cardPrice = item.querySelector(".card-price").textContent;
+          const cardDescription = item.getAttribute("data-description");
+          const cardWin = item.getAttribute("data-win");
+          const cardCpu = item.getAttribute("data-cpu");
 
 
 
-        localStorage.setItem("cardImage", cardImage);
-        localStorage.setItem("cardTitle", cardTitle);
-        localStorage.setItem("cardTime", cardTime);
-        localStorage.setItem("cardPrice", cardPrice);
-        localStorage.setItem("cardDescription", cardDescription);
-        localStorage.setItem("cardWin", cardWin);
-        localStorage.setItem("cardCpu", cardCpu);
+          localStorage.setItem("cardImage", cardImage);
+          localStorage.setItem("cardTitle", cardTitle);
+          localStorage.setItem("cardTime", cardTime);
+          localStorage.setItem("cardPrice", cardPrice);
+          localStorage.setItem("cardDescription", cardDescription);
+          localStorage.setItem("cardWin", cardWin);
+          localStorage.setItem("cardCpu", cardCpu);
 
-        window.location.href = "product.html";
-      });
+          window.location.href = "product.html";
+        });
+
+      }
     });
   
     const cardImage = localStorage.getItem("cardImage");

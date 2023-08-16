@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link type="image/x-icon" href="img/logo/iconka.ico" rel="shortcut icon">
     <link rel="stylesheet" href="css/style.css">
     <title>78cheats</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header animate__animated animate__fadeInDown">
             <div class="header__container">
                 <a href="#"><img src="img/logo/78walter.png" alt="" class="header__logo"></a> 
                 <div class="header__menu menu">
@@ -33,9 +34,9 @@
             <section class="main__page">
                 <!-- <img src="img/background/123123.jpg" alt="background" class="main__page__background"> -->
                 <video src="img/background/dots_-_120172 (Original).mp4" muted loop autoplay="autoplay" class="main__page__background"></video>
-                <img src="img/background/scav.png" alt="scav" class="main__page__scav-img" data-speed="100">
+                <img src="img/background/scav.png" alt="scav" class="main__page__scav-img animate__animated animate__fadeInRightBig wow" data-speed="100">
                 <div class="container">
-                    <div class="main__page__content">
+                    <div class="main__page__content animate__animated animate__fadeInLeft">
                         <h1>78cheats — магазин <span style="color: rgb(43, 182, 16);">UNDETECTED</span> читов</h1>
                         <button class="main__page__content__button menu__link" data-goto=".catalog">Перейти к каталогу товаров</button>
                     </div>
@@ -44,39 +45,34 @@
 
             <section class="why-we">
                 <div class="container">
-                    <h2 class="catalog__content__title">Почему именно мы?</h2>
+                    <h2 class="catalog__content__title animate__animated animate__fadeInLeft wow">Почему именно мы?</h2>
                     <div class="blur-element1"></div>
                     <div class="why-we__block">
 
-                        <div class="why-we__item">
+                        <div class="why-we__item animate__animated animate__fadeInBottomLeft wow">
                             <img src="img/logo/smile.png" alt="smile">
                             <h3>700+ довольных клиентов</h3>
                         </div>
-                        <div class="why-we__item">
+                        <div class="why-we__item animate__animated animate__fadeInUp wow">
                             <img src="img/logo/dinero.png" alt=dinero"">
                             <h3>Самые сладкие цены на рынке СНГ</h3>
                         </div>
-                        <div class="why-we__item">
+                        <div class="why-we__item animate__animated animate__fadeInBottomRight wow">
                             <img src="img/logo/sos.png" alt="sos">
                             <h3>Всегда поможем с проблемами!<br> Просто <a target="_blank" href="https://t.me/sand17tg" style="color: rgb(214, 18, 18); text-decoration: underline;">напишите</a> нам!</h3>
-                        </div>
-
-                        
-
-                        
-
+                        </div>                        
                     </div>
                 </div>
             </section>
 
             <section class="catalog">
-                <img src="img/background/background2.jpg" alt="background2" class="catalog__background">
+                <img src="img/background/background2.jpg" alt="background2" class="catalog__background" >
                  <div class="blur-element1"></div>
                  <div class="blur-element2"></div>
                 <div class="container">
                     <div class="catalog__content">
-                        <h2 class="catalog__content__title">Каталог</h2>
-                        <ul class="catalog-bar">
+                        <h2 class="catalog__content__title animate__animated animate__fadeInLeft wow">Каталог</h2>
+                        <ul class="catalog-bar animate__animated animate__fadeInLeft wow">
                             <li class="catalog-bar__item" data-tab="tab-eft">EFT</li>
                             <li class="catalog-bar__item" data-tab="tab-dayz">Dayz</li>
                             <li class="catalog-bar__item" data-tab="tab-rust">Rust</li>
@@ -95,85 +91,94 @@
 
                         <div class="catalog-content">
 
-                            <div class="catalog-content__block hidden" id="tab-eft">                              
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams.jpg" alt="chams" onclick="openModal('video/CHAMS.mp4', 'UNDETECTED', 'EFT CHAMS 1 Day', 'Цена: 320₽', 'Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.')">
-                                    <h3>EFT Chams 1 day</h3>
-                                    <p>Цена:<span> 290₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                            <div class="catalog-content__block hidden" id="tab-eft" >                              
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.">
+                                    <img class="card-img" src="img/product-img/chams.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams <span class="card-time">[1 день]</span></h3>
+                                    <p>Цена:<span class="card-price"> 290₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams.jpg" alt="chams" onclick="openModal('video/CHAMS.mp4', 'UNDETECTED', 'EFT CHAMS 7 Days', 'Цена: 900₽', 'Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.')">
-                                    <h3>EFT Chams 7 days</h3>
-                                    <p>Цена:<span> 880₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.">
+                                    <img class="card-img" src="img/product-img/chams.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams <span class="card-time">[7 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 880₽</span></p>
+                                    <button class="product-btn" >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams.jpg" alt="chams" onclick="openModal('video/CHAMS.mp4', 'UNDETECTED', 'EFT CHAMS 30 Days', 'Цена: 2000₽', 'Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.')">
-                                    <h3>EFT Chams 30 days</h3>
-                                    <p>Цена:<span> 1800₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Представляю вашему вниманию продукт EFT Chams — чит для Таркова, который содержит в себе только чамсы. Почему он хардкорный? Да потому что вам придётся стрелять самому, за вас убивать в голову он не будет. Заинжектили, зашли на сервер и просто видите, как противники бегают по всей карте — у данного софта нет даже меню.">
+                                    <img class="card-img" src="img/product-img/chams.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams <span class="card-time">[30 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 1800₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/sugar.jpg" alt="chams" onclick="openModal('video/SUGAR.MP4', 'UNDETECTED', 'EFT SUGAR 1 Day', 'Цена: 600₽', 'Представляю вашему вниманию продукт SUGAR EFT — чит для Таркова, который содержит в себе обширное меню, с различными функциями включая Aim, Wallhack, Speedhack, Misc, ESP и много чего другого!')">
-                                    <h3>SUGAR 1 day</h3>
-                                    <p>Цена:<span> 500₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel / AMD (AMD FX / Intel Xeon не поддерживаются, возврата не будет)" data-win="Windows 64x 10[20H2 - 22H2]" data-description="Данное ПО не садит FPS и отлично подходит для легитной и полу-рейдж игры. В данный продукт встроен HWID SPOOFER, который заменит ваше железо на другое во время работы чита.">
+                                    <img class="card-img" src="img/product-img/sugar.jpg" alt="sugar" >
+                                    <h3 class="card-title">DLC SUGAR <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [1 день]</span></h3>
+                                    <p>Цена:<span class="card-price"> 500₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/sugar.jpg" alt="chams" onclick="openModal('video/SUGAR.MP4', 'UNDETECTED', 'EFT SUGAR 7 Days', 'Цена: 2500₽', 'Представляю вашему вниманию продукт SUGAR EFT — чит для Таркова, который содержит в себе обширное меню, с различными функциями включая Aim, Wallhack, Speedhack, Misc, ESP и много чего другого!')">
-                                    <h3>SUGAR 7 days</h3>
-                                    <p>Цена:<span> 2500₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel / AMD (AMD FX / Intel Xeon не поддерживаются, возврата не будет)" data-win="Windows 64x 10[20H2 - 22H2]" data-description="Данное ПО не садит FPS и отлично подходит для легитной и полу-рейдж игры. В данный продукт встроен HWID SPOOFER, который заменит ваше железо на другое во время работы чита.">
+                                    <img class="card-img" src="img/product-img/sugar.jpg" alt="sugar" >
+                                    <h3 class="card-title">DLC SUGAR <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [7 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 2500₽</span></p>
+                                    <button class="product-btn" >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/sugar.jpg" alt="chams" onclick="openModal('video/SUGAR.MP4', 'UNDETECTED', 'EFT SUGAR 30 Days', 'Цена: 4200₽', 'Представляю вашему вниманию продукт SUGAR EFT — чит для Таркова, который содержит в себе обширное меню, с различными функциями включая Aim, Wallhack, Speedhack, Misc, ESP и много чего другого!')">
-                                    <h3>SUGAR 30 days</h3>
-                                    <p>Цена:<span> 4200₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel / AMD (AMD FX / Intel Xeon не поддерживаются, возврата не будет)" data-win="Windows 64x 10[20H2 - 22H2]" data-description="Данное ПО не садит FPS и отлично подходит для легитной и полу-рейдж игры. В данный продукт встроен HWID SPOOFER, который заменит ваше железо на другое во время работы чита.">
+                                    <img class="card-img" src="img/product-img/sugar.jpg" alt="sugar" >
+                                    <h3 class="card-title">DLC SUGAR <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [30 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 4200₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams++.jpg" alt="chams++">
-                                    <h3>EFT Chams++ 1 day</h3>
-                                    <p>Цена:<span> 440₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+
+                                
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Усовершенствованная версия Chams, в которой можно обозначить ЧКВ, Дикого, босса, абсолютно разными цветами из палитры RGB. Так же подсветка ящиков, контейнеров, лута, и прочего, выборка тоже есть. Присутствует Анти-Отдача, Бесконечный Бег.">
+                                    <img class="card-img" src="img/product-img/chams++.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams++ <span class="card-time">[1 день]</span></h3>
+                                    <p>Цена:<span class="card-price"> 440₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams++.jpg" alt="chams++">
-                                    <h3>EFT Chams++ 7 days</h3>
-                                    <p>Цена:<span> 1700₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Усовершенствованная версия Chams, в которой можно обозначить ЧКВ, Дикого, босса, абсолютно разными цветами из палитры RGB. Так же подсветка ящиков, контейнеров, лута, и прочего, выборка тоже есть. Присутствует Анти-Отдача, Бесконечный Бег.">
+                                    <img class="card-img" src="img/product-img/chams++.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams++ <span class="card-time">[7 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 1700₽</span></p>
+                                    <button class="product-btn" >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/chams++.jpg" alt="chams++">
-                                    <h3>EFT Chams++ 30 days</h3>
-                                    <p>Цена:<span> 3000₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Усовершенствованная версия Chams, в которой можно обозначить ЧКВ, Дикого, босса, абсолютно разными цветами из палитры RGB. Так же подсветка ящиков, контейнеров, лута, и прочего, выборка тоже есть. Присутствует Анти-Отдача, Бесконечный Бег.">
+                                    <img class="card-img" src="img/product-img/chams++.jpg" alt="chams" >
+                                    <h3 class="card-title">EFT Chams++ <span class="card-time">[30 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 2900₽</span></p>
+                                    <button class="product-btn"  >Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/vx.jpg" alt="chams">
-                                    <h3>VX 1 day</h3>
-                                    <p>Цена:<span> 400₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                        
+
+
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Бюджетный вариант полноценного софта, присутствует Aim-bot, FOV, возможность лутать через стены, ставить минимальную сумму отображаемого лута, отображены выходы. Встроен HWID-CHANGER.">
+                                    <img class="card-img" src="img/product-img/vx.jpg" alt="vx" >
+                                    <h3 class="card-title">DLC VX <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [1 день]</span></h3>
+                                    <p>Цена:<span class="card-price"> 420₽</span></p>
+                                    <button class="product-btn">Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/vx.jpg" alt="chams">
-                                    <h3>VX 7 days</h3>
-                                    <p>Цена:<span> 2400₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Бюджетный вариант полноценного софта, присутствует Aim-bot, FOV, возможность лутать через стены, ставить минимальную сумму отображаемого лута, отображены выходы. Встроен HWID-CHANGER.">
+                                    <img class="card-img" src="img/product-img/vx.jpg" alt="vx" >
+                                    <h3 class="card-title">DLC VX <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [7 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 2100₽</span></p>
+                                    <button class="product-btn">Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/vx.jpg" alt="chams">
-                                    <h3>VX 30 days</h3>
-                                    <p>Цена:<span> 4200₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Бюджетный вариант полноценного софта, присутствует Aim-bot, FOV, возможность лутать через стены, ставить минимальную сумму отображаемого лута, отображены выходы. Встроен HWID-CHANGER.">
+                                    <img class="card-img" src="img/product-img/vx.jpg" alt="vx" >
+                                    <h3 class="card-title">DLC SUGAR <span style="color: rgb(14, 93, 211)">+ HWID</span><span class="card-time"> [30 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 3900₽</span></p>
+                                    <button class="product-btn">Подробнее</button>
                                 </div>
-                                <div class="catalog-content__block__item">
-                                    <img src="img/product-img/smg-private.png" alt="private">
-                                    <h3>SMG Private 30 day</h3>
-                                    <p>Цена:<span> 9900₽</span></p>
-                                    <a class="product-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
+
+                                
+                                <div class="catalog-content__block__item " data-cpu="CPU: Intel или AMD" data-win="Windows 64x 10[20H2 - 22H2] — 11[22H2]" data-description="Самый безопастный слотовый софт для EFT. [?/20] . Чтобы узнать есть ли места, пишите в телеграм! Имеет фирменную менюшку, приятные визуалы, статус UNDETECTED, частые обновления и нововведения.">
+                                    <img class="card-img" src="img/product-img/smg-private.png" alt="vx" >
+                                    <h3 class="card-title">SMG PRIVATE <span class="card-time"> [30 дней]</span></h3>
+                                    <p>Цена:<span class="card-price"> 9900₽</span></p>
+                                    <button class="product-btn">Подробнее</button>
                                 </div>
+
                             </div>
 
                             <div class="catalog-content__block hidden" id="tab-dayz">
@@ -364,24 +369,6 @@
                                 <img src="img/logo/nothing.png" alt="nothing" class="catalog-nothing__IMG">
                             </div>
 
-                            <!-- <div class="pop-up" id="modal">
-                                
-                                
-                                    <div class="pop-up__content__container">
-                                        <span class="pop-up__close">&times;</span>
-                                        <video controls id="videoPlayer" preload></video>
-                                        
-                                        <div class="pop-up__container__text">
-                                            <h2 id="modalTitle"></h2>
-                                            <span><h3 id="modalStatus"></h3></span>
-                                            <p id="modalPrice"></p>
-                                            <p id="modalDescription"></p>
-
-                                            <a id="modalButton" class="product-btn modalProduct-btn" href="https://t.me/s7ven8" target="_blank">Купить</a>
-                                        </div>
-                                    </div>
-                                
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -392,17 +379,17 @@
         </footer>
     </div>
 
-    <script src="js/script.js"></script>
-
-    <script>
-        const parallaxImage = document.querySelector('.main__page__scav-img');
-
+    <script src="js/combined.js"></script>
+    <!-- <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script> -->
+    <script>const parallaxImage = document.querySelector('.main__page__scav-img');
+        
         document.addEventListener('mousemove', (e) => {
-        const xPosition = e.clientX / window.innerWidth;
-        const xOffset = -100 + xPosition * 100; // Регулируйте этот коэффициент для более сильного или слабого эффекта
-
-        parallaxImage.style.transform = `translateX(${xOffset}px)`;
-        });
-    </script>
+            const xPosition = e.clientX / window.innerWidth;
+            const xOffset = -100 + xPosition * 100; // Регулируйте этот коэффициент для более сильного или слабого эффекта
+            
+            parallaxImage.style.transform = `translateX(${xOffset}px)`;
+        });</script>
+    <script src="js/script.js"></script>
 </body>
 </html>

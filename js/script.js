@@ -61,42 +61,4 @@ tabsTitle.forEach(item => item.addEventListener('click', event => {
 document.querySelector('[data-tab="tab-eft"]').classList.add('active-tab');
 document.querySelector('#tab-eft').classList.remove('hidden');
 
-/* ---pop-up----------------------------------------------------------------------- */
-// const popVideo = document.getElementById("pop-up__video");
-// document.querySelectorAll('.catalog-content__block img').forEach(img =>{
-//     img.onclick = () => {
-//         const 
-//         document.querySelector('.pop-up').style.display = 'block';
-//         document.querySelector('.pop-up img').src = img.getAttribute('src');
-//         document.body.classList.add('_lock');
-//     }
-// });
-function openModal(videoSource, status,title, price, description){
-    const modal = document.getElementById("modal");
-    const videoPlayer = document.getElementById("videoPlayer");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalStatus = document.getElementById("modalStatus");
-    const modalPrice = document.getElementById("modalPrice");
-    const modalDescription = document.getElementById("modalDescription");
-
-
-    videoPlayer.src = videoSource;
-    modalTitle.textContent = title;
-    modalStatus.textContent = status;
-    modalPrice.textContent = price;
-    modalDescription.textContent = description;
-    
-    modal.style.display = "block";
-    document.body.classList.add('_lock');
-}
-
-
-document.querySelector('.pop-up span').onclick = () => {
-    document.querySelector('.pop-up').style.display = 'none';
-    document.body.classList.remove('_lock');
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
-}
-
-
-/* --------scav paralax------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------- */

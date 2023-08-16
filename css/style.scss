@@ -672,6 +672,33 @@ body{
         padding: 150px 0px;
         height: 100%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        .back-btn{
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s ease-out;
+            color: #242424;
+            // border: 2px solid red;
+            width: 150px;
+
+            &:hover img {
+                transform: scaleX(1.3);
+            }
+            &:hover  {
+                transform: scaleX(1.1);
+            }
+            img{
+                width: 50px;
+                margin-right: 5px;
+                padding-top: 5px;
+                transition: all .3s ease-out;
+                
+            }
+        }
+
         &__wrapper{
             display: flex;
             gap: 25px;

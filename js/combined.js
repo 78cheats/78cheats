@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("DOMContentLoaded", function () {
     // ... ваш существующий код ...
   
-    const backButton = document.getElementById("back-button");
+    const backButton = document.querySelector(".back-btn");
     if (backButton) {
       backButton.addEventListener("click", function (event) {
         event.preventDefault();

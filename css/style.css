@@ -546,9 +546,15 @@ body._lock {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  width: 350px;
+}
+@media (max-width: 768px) {
+  .catalog .catalog-content__block__item {
+    width: 100%;
+  }
 }
 .catalog .catalog-content__block__item img {
-  width: 350px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;
@@ -571,11 +577,6 @@ body._lock {
 }
 .catalog .catalog-content__block__item img:hover .catalog .catalog-content__block__item img::after {
   display: block;
-}
-@media (max-width: 768px) {
-  .catalog .catalog-content__block__item img {
-    width: 100%;
-  }
 }
 .catalog .catalog-content__block__item h3 {
   margin: 20px 0px;

@@ -353,8 +353,13 @@ body{
             // align-items: center;
             justify-content: space-between;
             overflow: hidden;
+            width: 350px;
+
+            @media(max-width: 768px){
+                width: 100%;
+            }
             img{
-                width: 350px;
+                width: 100%;
                 object-fit: cover;
                 transition: .5s;
                 cursor: pointer;
@@ -375,9 +380,6 @@ body{
                 }
                 &:hover &::after{
                     display: block;
-                }
-                @media(max-width: 768px){
-                    width: 100%;
                 }
             }
             h3{

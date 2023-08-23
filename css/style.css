@@ -555,6 +555,7 @@ body._lock {
 }
 .catalog .catalog-content__block__item img {
   width: 100%;
+  height: 218px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;

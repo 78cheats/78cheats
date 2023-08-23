@@ -789,6 +789,8 @@ body._lock {
   padding: 50px 0px;
   background-color: #080707;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 .why-we__block {
   margin-top: 50px;

@@ -61,4 +61,6 @@ tabsTitle.forEach(item => item.addEventListener('click', event => {
 document.querySelector('[data-tab="tab-eft"]').classList.add('active-tab');
 document.querySelector('#tab-eft').classList.remove('hidden');
 
-/* -------------------------------------------------------------------------- */
+/* --------visual effect------------------------------------------------------------------ */
+
+
